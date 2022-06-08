@@ -15,7 +15,8 @@ dbConnection()
 app.use(cors())
 
 //* Directorio público
-app.use( express.static('./public') )
+app.use( express.static('public') )
+
 
 //* lectura y parseo del body
 app.use( express.json() )
