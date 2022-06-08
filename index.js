@@ -3,6 +3,7 @@ const express = require('express')
 const { dbConnection } = require('./db/mongodb-config')
 require('dotenv').config()
 const cors = require('cors')
+const { path } = require('path')
 
 
 //* Crear el servidor de express
@@ -15,7 +16,7 @@ dbConnection()
 app.use(cors())
 
 //* Directorio público
-app.use( express.static('public') )
+app.use( express.static(path.join(__dirname, 'public')) )
 
 
 //* lectura y parseo del body
