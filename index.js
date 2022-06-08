@@ -3,7 +3,6 @@ const express = require('express')
 const { dbConnection } = require('./db/mongodb-config')
 require('dotenv').config()
 const cors = require('cors')
-const { path } = require('path')
 
 
 //* Crear el servidor de express
