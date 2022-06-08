@@ -1,0 +1,3 @@
+PORT=4000
+DB_CNN=<cadena-mongo atlas>
+SECRET_PASS_SEED=<jwt secret word >
