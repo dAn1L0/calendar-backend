@@ -16,6 +16,7 @@ app.use(cors())
 
 //* Directorio público
 app.use( express.static('public') )
+app.use( express.static('files') )
 
 
 //* lectura y parseo del body
